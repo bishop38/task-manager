@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <!-- Регистрация и вход -->
+    <div id="auth-section">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <h2>Register</h2>
+        <form id="register-form">
+            <input type="text" id="register-name" placeholder="Name" required>
+            <input type="email" id="register-email" placeholder="Email" required>
+            <input type="password" id="register-password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <!-- Секция задач -->
+    <div id="tasks-section" style="display:none;">
+        <h2>My Tasks</h2>
+        <ul id="task-list"></ul>
+
+        <h2>Add Task</h2>
+        <form id="task-form">
+            <input type="text" id="task-title" placeholder="Title" required>
+            <textarea id="task-desc" placeholder="Description" required></textarea>
+            <input type="date" id="task-due-date">
+            <button type="submit">Add Task</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
